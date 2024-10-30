@@ -1,0 +1,239 @@
+
+.project {
+  padding: 80px 0;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+}
+
+.project::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  opacity: 0;
+}
+
+.project h2 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.project p {
+  font-size: 26px;
+  font-family: "VT323", monospace;
+  line-height: 1.5em;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 56%;
+  letter-spacing: 0.8px;
+}
+
+.project .nav.nav-pills {
+  width: 100%;
+  max-width: 600px; 
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: #424242;
+  overflow: hidden;
+}
+
+.project .nav.nav-pills .nav-item {
+  width: 33.3%; 
+
+}
+
+.project .nav.nav-pills .nav-link {
+
+  padding: 10px ; 
+  font-size: 14px; 
+  font-weight: 500;
+  min-height: 37px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+
+.project .nav.nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #498a7e, #9d65a0);
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+
+.project .nav.nav-pills .nav-link.active::before,
+.project .nav.nav-pills .nav-link:hover::before {
+  width: 100%;
+}
+
+.project .nav.nav-pills .nav-link.active {
+  border: 1px solid rgba(207, 255, 222, 0.8);
+  font-weight: 600;
+}
+
+.nav-pills .nav-link {
+  text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  
+  transform: scale(1.05);
+}
+
+
+
+@media (max-width: 600px) {
+  .project .nav.nav-pills {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .project .nav.nav-pills .nav-item {
+    width: 100%;
+  }
+
+  .project .nav.nav-pills .nav-link {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 0;
+  }
+
+ 
+  .nav-link#projects-tabs-tab-first {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .nav-link#projects-tabs-tab-third {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+.github-card-first, .github-card-second, .github-card-third {
+  display: inline-block;
+  width: 240px;
+  height: 250px;
+  
+  
+  margin-top: 20px;
+  margin: 0 auto;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  font-family: 'VT323', monospace;
+  position: relative;
+}
+
+.github-card-first{
+  background-image: url("./../../assets/img/github-bg.png");
+}
+.github-card-second{
+  background-image: url("./../../assets/img/pacman-bg.png");
+}
+.github-card-third{
+  background-image: url("./../../assets/img/header-img.svg");
+}
+
+.github-card-first::before, .github-card-second::before, .github-card-third::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+.github-card-first:hover, .github-card-second:hover, .github-card-third:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+} 
+
+.github-card-first .card-content, .github-card-second .card-content, .github-card-third .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.github-card-first img, .github-card-second img, .github-card-third img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.github-card-first h3, .github-card-second h3, .github-card-third h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+
+.github-p{
+  font-size: 1.3em;
+  margin: 10px 0 5px 0;
+  color: #ffffff;
+ 
+}
+
+
+.content-container {
+  display: flex;
+  margin: auto;
+  align-items: center; 
+  padding: 10px;
+
+}
+
+@media (max-width: 800px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+}
+.content-container p{
+  max-width: max-content;
+  font-size: 1.7em;
+  font-family: "VT323", monospace;
+  height: auto;
+}

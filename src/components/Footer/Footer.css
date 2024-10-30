@@ -1,0 +1,123 @@
+.footer {
+  padding: 60px 0;
+  background-color: #121212;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #B8B8B8;
+}
+
+.footer-logo {
+  width: 80px;
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 30px; 
+  font-family: 'Roboto', sans-serif;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+}
+
+.newsletter-bx {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 55px;
+  color: #121212;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
+}
+
+.newsletter-bx h3 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
+  margin-bottom: 15px;
+  color: #121212;
+}
+
+.new-email-bx {
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-email-bx input {
+  flex: 1;
+  color: #121212;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  outline: none;
+  border-radius: 20px 0 0 20px;
+}
+
+.new-email-bx button {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.new-email-bx button:hover {
+  background: linear-gradient(90.21deg, #4A2FBD -5.91%, #AA367C 111.58%);
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .footer-logo {
+      width: 60px;
+  }
+  
+  .newsletter-bx {
+      padding: 20px;
+  }
+  
+  .new-email-bx {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .new-email-bx input {
+      margin-bottom: 10px;
+      width: 100%;
+  }
+
+  .new-email-bx button {
+      padding: 10px 15px;
+  }
+}
