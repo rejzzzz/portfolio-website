@@ -82,6 +82,7 @@
 .project .nav.nav-pills .nav-link.active::before,
 .project .nav.nav-pills .nav-link:hover::before {
   width: 100%;
+  background-color: transparent;
 }
 
 .project .nav.nav-pills .nav-link.active {
